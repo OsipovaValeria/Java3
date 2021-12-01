@@ -5,11 +5,11 @@ package Java;
  * @author Осипова Валерия (3 курс 7 группа)
  */
 
-public class Result {
+public class CreatingTableOfResults {
     /**
      * Конструктор PrintResult
      */
-    private Result() {
+    private CreatingTableOfResults() {
     }
     /**
      * Метод для создания шапки таблицы
@@ -32,7 +32,8 @@ public class Result {
         long count = 0; // Переменная для посчёта общего времени
 
         resultArrayList += "Заполнение ArrayList                  1";
-        resultArrayList += "                         ";
+        for(int i = 0; i < 25; i++)
+            resultArrayList += " ";
         resultArrayList += arrayList.timeFillArrayList();
 
         resultArrayList += "\nУдаление элементов из ArrayList       " + n;

@@ -16,9 +16,9 @@ public class Main {
                 int n = in.nextInt();
                 ArrayListWork arrayList = new ArrayListWork(n); // @value arrayList - создание нового объекта типа ArrayListWork
                 LinkedListWork linkedList = new LinkedListWork(); // @value linkedList - создание нового объекта типа LinkedListWork
-                System.out.println(Result.header());
-                System.out.println(Result.resultArrayList(n, arrayList));
-                System.out.println(Result.resultLinkedList(n, linkedList));
+                System.out.println(CreatingTableOfResults.header());
+                System.out.println(CreatingTableOfResults.resultArrayList(n, arrayList));
+                System.out.println(CreatingTableOfResults.resultLinkedList(n, linkedList));
 
             } catch (InputMismatchException ex) {
                 System.out.println("Ошибка ввода.");
